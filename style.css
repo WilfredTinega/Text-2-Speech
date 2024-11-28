@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Display:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background: linear-gradient(16deg, black, rgba(135, 207, 235, 0.3));
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .navbar h1 {
+  font-size: 45px;
+  font-weight: 700;
+  margin: 3rem auto;
+  color: #fff;
+}
+body .navbar h1 span {
+  color: #ff2963;
+  position: relative;
+}
+body .navbar h1 span::after {
+  content: "";
+  width: 150px;
+  height: 2px;
+  background-color: #ff2963;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+}
+body textarea {
+  width: 45%;
+  height: 250px;
+  background: rgba(64, 64, 64, 0.2549019608);
+  backdrop-filter: blur(40px);
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  padding: 2rem;
+  color: #fff;
+  resize: none;
+  border-radius: 0.5rem;
+  margin-bottom: 2.5rem;
+  scrollbar-width: none;
+}
+body textarea::placeholder {
+  color: #ddd;
+}
+body .row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45%;
+  gap: 1rem;
+}
+body .row select {
+  flex: 1;
+  color: #fff;
+  background: #403d84;
+  height: 3rem;
+  padding: 0 1.2rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  scrollbar-width: none;
+  overflow-y: hidden;
+  width: 50%;
+}
+body .row button {
+  background: #ff2963;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .row button i {
+  font-size: 24px;
+}
+body .row button:hover {
+  background: rgba(14, 255, 2, 0.631372549);
+}
+@media (max-width: 40rem) {
+  body .navbar h1 {
+    font-size: 22px;
+    margin: 2rem auto;
+  }
+  body .navbar h1 span::after {
+    width: 75px;
+  }
+  body textarea {
+    width: 90%;
+    height: 200px;
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  body .row {
+    width: 90%;
+    gap: 1rem;
+  }
+  body .row select {
+    height: 3rem;
+    padding: 0 1rem;
+  }
+  body .row button {
+    font-size: 1rem;
+    padding: 0.5rem 0.5rem;
+  }
+  body .row button i {
+    font-size: 24px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
